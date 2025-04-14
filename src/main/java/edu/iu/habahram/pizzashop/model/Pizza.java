@@ -9,6 +9,7 @@ public abstract class Pizza {
     Cheese cheese;
     Pepperoni pepperoni;
     Clams clam;
+    Garlic garlic;
 
     StringBuffer state = new StringBuffer();
 
@@ -52,6 +53,12 @@ public abstract class Pizza {
             result.append(cheese);
             result.append("\n");
         }
+
+        if (garlic != null) {
+            result.append(garlic);
+            result.append("\n");
+        }
+
         if (veggies != null) {
             for (int i = 0; i < veggies.length; i++) {
                 result.append(veggies[i]);
